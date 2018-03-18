@@ -10,7 +10,7 @@
   </scene>
   <scene name="S2" secondsDelay="25">
     <zone name="Z2">
-      <content xsi:type="generadorHtml:TextScroll" name="T1" text="Este es otro texto de contenido" secondsTransition="45" direction="down"/>
+      <content xsi:type="generadorHtml:TextScroll" name="T1" text="Este es otro texto de contenido" secondsTransition="45" direction="left"/>
     </zone>
   </scene>
 </generadorHtml:PlayList>

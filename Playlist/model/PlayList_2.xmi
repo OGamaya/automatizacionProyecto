@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generadorHtml:PlayList xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generadorHtml="http://www.example.org/generadorHtml" xsi:schemaLocation="http://www.example.org/generadorHtml generadorHtml.ecore">
+  <scene name="S1" secondsDelay="34">
+    <zone name="Z1">
+      <content xsi:type="generadorHtml:Multimedia" name="video1">
+        <layout position="relative"/>
+      </content>
+    </zone>
+    <layout/>
+  </scene>
+  <scene name="S2" secondsDelay="25">
+    <zone name="Z2">
+      <layout/>
+      <content xsi:type="generadorHtml:TextScroll" name="T1" text="Este es otro texto de contenido" secondsTransition="45" direction="right">
+        <layout/>
+      </content>
+    </zone>
+  </scene>
+</generadorHtml:PlayList>

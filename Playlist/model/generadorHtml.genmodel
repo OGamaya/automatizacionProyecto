@@ -17,6 +17,10 @@
       <genEnumLiterals ecoreEnumLiteral="generadorHtml.ecore#//MultimediaType/Video"/>
       <genEnumLiterals ecoreEnumLiteral="generadorHtml.ecore#//MultimediaType/Image"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="generadorHtml.ecore#//DirectionType">
+      <genEnumLiterals ecoreEnumLiteral="generadorHtml.ecore#//DirectionType/left"/>
+      <genEnumLiterals ecoreEnumLiteral="generadorHtml.ecore#//DirectionType/right"/>
+    </genEnums>
     <genClasses ecoreClass="generadorHtml.ecore#//PlayList">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//PlayList/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference generadorHtml.ecore#//PlayList/scene"/>
@@ -42,6 +46,7 @@
     </genClasses>
     <genClasses ecoreClass="generadorHtml.ecore#//Content">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Content/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference generadorHtml.ecore#//Content/layout"/>
     </genClasses>
     <genClasses ecoreClass="generadorHtml.ecore#//Multimedia">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Multimedia/type"/>
