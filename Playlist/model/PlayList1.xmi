@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generadorHtml:PlayList xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generadorHtml="http://www.example.org/generadorHtml" name="repro1">
+  <scene name="S1" secondsDelay="10">
+    <zone name="Z1">
+      <content xsi:type="generadorHtml:Multimedia" name="image1" type="Image" url="">
+        <layout position="relative"/>
+      </content>
+      <content xsi:type="generadorHtml:Multimedia" name="image2" type="Image" url="">
+        <layout position="relative"/>
+      </content>
+    </zone>
+    <zone name="Z2">
+      <content xsi:type="generadorHtml:TextScroll" name="T1" text="Este texto de transición " secondsTransition="50" direction="up">
+        <layout position="relative"/>
+      </content>
+    </zone>
+    <zone name="Z3">
+      <content xsi:type="generadorHtml:Multimedia" name="video1">
+        <layout position="relative"/>
+      </content>
+    </zone>
+    <layout/>
+  </scene>
+</generadorHtml:PlayList>

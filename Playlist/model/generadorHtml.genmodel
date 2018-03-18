@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/GeneradorHtml/src-gen" creationIcons="false" editDirectory="/GeneradorHtml.edit/src-gen"
+    editorDirectory="/GeneradorHtml.editor/src-gen" modelPluginID="GeneradorHtml"
+    modelName="GeneradorHtml" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>generadorHtml.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="GeneradorHtml" disposableProviderFactory="true" ecorePackage="generadorHtml.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="generadorHtml.ecore#//PositionType">
+      <genEnumLiterals ecoreEnumLiteral="generadorHtml.ecore#//PositionType/absolute"/>
+      <genEnumLiterals ecoreEnumLiteral="generadorHtml.ecore#//PositionType/relative"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="generadorHtml.ecore#//MultimediaType">
+      <genEnumLiterals ecoreEnumLiteral="generadorHtml.ecore#//MultimediaType/Video"/>
+      <genEnumLiterals ecoreEnumLiteral="generadorHtml.ecore#//MultimediaType/Image"/>
+    </genEnums>
+    <genClasses ecoreClass="generadorHtml.ecore#//PlayList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//PlayList/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference generadorHtml.ecore#//PlayList/scene"/>
+    </genClasses>
+    <genClasses ecoreClass="generadorHtml.ecore#//Scene">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Scene/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Scene/secondsDelay"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference generadorHtml.ecore#//Scene/zone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference generadorHtml.ecore#//Scene/layout"/>
+    </genClasses>
+    <genClasses ecoreClass="generadorHtml.ecore#//Zone">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Zone/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Zone/activeArea"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference generadorHtml.ecore#//Zone/layout"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference generadorHtml.ecore#//Zone/content"/>
+    </genClasses>
+    <genClasses ecoreClass="generadorHtml.ecore#//Layout">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Layout/position"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Layout/widht"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Layout/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Layout/left"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Layout/top"/>
+    </genClasses>
+    <genClasses ecoreClass="generadorHtml.ecore#//Content">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Content/name"/>
+    </genClasses>
+    <genClasses ecoreClass="generadorHtml.ecore#//Multimedia">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Multimedia/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Multimedia/url"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference generadorHtml.ecore#//Multimedia/cssdefinition"/>
+    </genClasses>
+    <genClasses ecoreClass="generadorHtml.ecore#//TextScroll">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//TextScroll/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//TextScroll/secondsTransition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//TextScroll/direction"/>
+    </genClasses>
+    <genClasses ecoreClass="generadorHtml.ecore#//CssDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//CssDefinition/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference generadorHtml.ecore#//CssDefinition/property"/>
+    </genClasses>
+    <genClasses ecoreClass="generadorHtml.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Property/cssValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generadorHtml.ecore#//Property/cssName"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
